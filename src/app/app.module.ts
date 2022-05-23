@@ -16,6 +16,7 @@ import { StorageService } from './shared/storage.service';
   providers: [
     StorageService
   ],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
