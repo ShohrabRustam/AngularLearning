@@ -1,1 +1,6 @@
-<p style="background-color: aqua;">data-binding works!</p>
+<div class="container">
+<h3>{{ title }}</h3>
+<button class="btn btn-primary" (keydown)="handleEvent()">KeyUp</button>
+<input placeholder="Hello" [(ngModel)]="title">
+
+</div>

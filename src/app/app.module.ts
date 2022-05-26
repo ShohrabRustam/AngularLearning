@@ -7,6 +7,7 @@ import { StorageService } from './shared/storage.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgToastModule } from 'ng-angular-popup';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgToastModule
+    NgToastModule,
+    FormsModule
 
   ],
   providers: [

@@ -12,4 +12,10 @@ export class DataBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+title:string='';
+
+handleEvent(){
+console.log(this.title);
+}
+
 }

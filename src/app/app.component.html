@@ -3,15 +3,17 @@
 <hr>
 <div class="container bg-dark">
   <div class="col-md-12 text-center">
-    <button type="button" class="btn btn-primary col-sm-1 text-center" style="margin: 10px"
-      (click)="showSuccess()">Success Toaster</button>
-    <button type="button" class="btn btn-warning col-sm-1 text-center" style="margin: 10px"
-      (click)="showToasterError()">Error Toaster</button>
-    <button type="button" class="btn btn-warning col-sm-1 text-center" style="margin: 10px"
-      (click)="showToasterInfo()">Info Toaster</button>
-    <button type="button" class="btn btn-warning col-sm-1 text-center" style="margin: 10px"
-      (click)="showToasterWarning()">Warning Toaster</button>
+    <button type="button" class="btn btn-primary col-sm-5 text-center" style="margin: 10px"
+      (click)="showSuccess()">Success </button>
+    <button type="button" class="btn btn-warning col-sm-5 text-center" style="margin: 10px"
+      (click)="showToasterError()">Error </button>
+    <button type="button" class="btn btn-warning col-sm-5 text-center" style="margin: 10px"
+      (click)="showToasterInfo()">Info </button>
+    <button type="button" class="btn btn-primary col-sm-5 text-center" style="margin: 10px"
+      (click)="showToasterWarning()">Warning </button>
   </div>
   <lib-ng-toast></lib-ng-toast>
 </div>
-
+<div class="container" style="margin-top:20px">
+  <app-data-binding></app-data-binding>
+</div>
