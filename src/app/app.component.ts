@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NotificationService } from './notification.service'
-
+import { HttpService } from './http.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,14 +8,15 @@ import { NotificationService } from './notification.service'
 })
 export class AppComponent {
   title = 'AngularLearning';
-  constructor( private notifyService: NotificationService) {
+  constructor(private notifyService: NotificationService, private http: HttpService) {
 
   }
-showSuccess(){
-setTimeout(() =>{
-this.showToasterSuccess();
-},2000);
-}
+
+  showSuccess() {
+    setTimeout(() => {
+      this.showToasterSuccess();
+    }, 2000);
+  }
   showToasterSuccess() {
     this.notifyService.showSuccess("Data shown successfully !!", "www.SalmaRustam.com")
   }
@@ -31,4 +32,10 @@ this.showToasterSuccess();
   showToasterError() {
     this.notifyService.showError("Something is wrong", "www.SalmaRustam.com")
   }
+
+  HandleUrl() {
+console.log("Hello Connection is work !!");
+    this.http.getRequest("https://jsonplaceholder.typicode.com/todos/1");
+  }
+
 }
