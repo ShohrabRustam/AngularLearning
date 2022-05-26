@@ -21,14 +21,14 @@ this.showToasterSuccess();
   }
 
   showToasterInfo() {
-    // this.notifyService.showInfo("This is Info", "www.SalmaRustam.com")
+    this.notifyService.showInfo("This is Info", "www.SalmaRustam.com")
 
   }
 
   showToasterWarning() {
-    // this.notifyService.showWarning("This is a warning", "www.SalmaRustam.com")
+    this.notifyService.showWarning("This is a warning", "www.SalmaRustam.com")
   }
   showToasterError() {
-    // this.notifyService.showError("Something is wrong", "www.SalmaRustam.com")
+    this.notifyService.showError("Something is wrong", "www.SalmaRustam.com")
   }
 }
