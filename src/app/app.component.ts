@@ -12,6 +12,9 @@ export class AppComponent {
 
   }
 
+demo(){
+alert("Connected to Angular");
+}
   showSuccess() {
     setTimeout(() => {
       this.showToasterSuccess();
@@ -26,15 +29,21 @@ export class AppComponent {
 
   }
 
-  showToasterWarning() {
-    this.notifyService.showWarning("This is a warning", "www.SalmaRustam.com")
+
+  showToasterWarning()
+  {
+    for (let i = 0; i < 100; i++) {
+      console.log(i);
+    }
+    this.notifyService.showWarning("Some is Warning", "www.SalmaRustam.com")
+
   }
   showToasterError() {
     this.notifyService.showError("Something is wrong", "www.SalmaRustam.com")
   }
 
   HandleUrl() {
-console.log("Hello Connection is work !!");
+    console.log("Hello Connection is work !!");
     this.http.getRequest("https://jsonplaceholder.typicode.com/todos");
   }
 
