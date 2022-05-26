@@ -18,7 +18,7 @@ a:"Hello World",
 b:"I am there to help you"
 };
 
-date=new Date();
+newdate=new Date();
 
 handleEvent(){
 console.log(this.title);

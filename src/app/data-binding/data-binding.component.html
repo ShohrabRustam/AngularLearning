@@ -7,8 +7,19 @@
 <hr>
   <div class="container">
     <h2>Date Pipe</h2>
-    {{ date|date }}
+  <p>  {{ newdate|date}}</p>
   </div>
+<hr>
+<hr>
+  <div class="container">
+    <h2>Date Pipe</h2>
+  <p>  {{ newdate|date:'medium'}}</p>
+  </div>
+<hr>
+<div class="container">
+  <h2>Date Pipe</h2>
+<p>  {{ newdate|date:'short'}}</p>
+</div>
 <hr>
   <button class="btn btn-primary" (keydown)="handleEvent()">KeyUp</button>
   <input placeholder="Hello" [(ngModel)]="title">
