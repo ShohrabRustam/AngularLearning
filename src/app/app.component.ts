@@ -12,9 +12,9 @@ export class AppComponent {
 
   }
 
-demo(){
-alert("Connected to Angular");
-}
+  demo() {
+    alert("Connected to Angular");
+  }
   showSuccess() {
     setTimeout(() => {
       this.showToasterSuccess();
@@ -30,8 +30,7 @@ alert("Connected to Angular");
   }
 
 
-  showToasterWarning()
-  {
+  showToasterWarning() {
     for (let i = 0; i < 100; i++) {
       console.log(i);
     }
