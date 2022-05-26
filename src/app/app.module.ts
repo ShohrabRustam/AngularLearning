@@ -9,6 +9,7 @@ import { NgToastModule } from 'ng-angular-popup';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { TruncatePipe } from './truncate.pipe';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,8 @@ import { TruncatePipe } from './truncate.pipe';
     AppRoutingModule,
     BrowserAnimationsModule,
     NgToastModule,
-    FormsModule
-
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     StorageService
