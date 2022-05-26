@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StorageService } from './shared/storage.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgToastModule } from 'ng-angular-popup';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,10 @@ import { StorageService } from './shared/storage.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NgToastModule
+
   ],
   providers: [
     StorageService
