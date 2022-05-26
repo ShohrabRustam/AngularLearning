@@ -1,4 +1,9 @@
 <h1 style="text-align:center">{{ title }}</h1>
 <br>
-<button class="btn btn-primary">Click me </button>
-
+<hr>
+<div class="container bg-dark">
+  <div class="col-md-12 text-center">
+    <button  type="button" class="btn btn-primary col-sm-1 text-center" style="margin: 20px" (click)="submit()">Click on Submit</button>
+    <button  type="button" class="btn btn-warning col-sm-1 text-center" style="margin: 20px" (click)="cancel()">Click on Cancel</button>
+  </div>
+</div>

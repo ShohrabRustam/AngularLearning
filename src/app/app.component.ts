@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularLearning';
+  submit(){
+    alert("We Click on Submit");
+    }
+
+    cancel(){
+    alert("We Click on Cancel");
+    }
+
 }

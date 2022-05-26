@@ -19,4 +19,6 @@ import { StorageService } from './shared/storage.service';
   exports: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
