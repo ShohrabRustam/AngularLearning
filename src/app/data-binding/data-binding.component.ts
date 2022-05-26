@@ -18,6 +18,7 @@ a:"Hello World",
 b:"I am there to help you"
 };
 
+message:string='Hello Can I help you ?';
 newdate=new Date();
 
 handleEvent(){

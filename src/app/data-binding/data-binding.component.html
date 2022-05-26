@@ -21,6 +21,11 @@
 <p>  {{ newdate|date:'short'}}</p>
 </div>
 <hr>
+<div class="container">
+<h2>Custom Pipe</h2>
+<p>{{  message| truncate}}</p>
+</div>
+<hr>
   <button class="btn btn-primary" (keydown)="handleEvent()">KeyUp</button>
   <input placeholder="Hello" [(ngModel)]="title">
 </div>
