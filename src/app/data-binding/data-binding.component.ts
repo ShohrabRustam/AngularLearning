@@ -13,6 +13,10 @@ export class DataBindingComponent implements OnInit {
   }
 
 title:string='';
+jsonValue:any= {
+a:"Hello World",
+b:"I am there to help you"
+};
 
 handleEvent(){
 console.log(this.title);
