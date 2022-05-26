@@ -1,6 +1,15 @@
 <div class="container">
-<h3>JSON</h3>
-<p>{{ jsonValue|json }}</p>>
-<button class="btn btn-primary" (keydown)="handleEvent()">KeyUp</button>
-<input placeholder="Hello" [(ngModel)]="title">
+<hr>
+  <div class="container">
+    <h3>JSON Pipe</h3>
+    <p>{{ jsonValue|json }}</p>
+  </div>
+<hr>
+  <div class="container">
+    <h2>Date Pipe</h2>
+    {{ date|date }}
+  </div>
+<hr>
+  <button class="btn btn-primary" (keydown)="handleEvent()">KeyUp</button>
+  <input placeholder="Hello" [(ngModel)]="title">
 </div>
