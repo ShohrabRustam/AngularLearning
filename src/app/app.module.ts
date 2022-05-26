@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { StorageService } from './shared/storage.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgToastModule } from 'ng-angular-popup';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule,
