@@ -43,7 +43,7 @@ export class AppComponent {
 
   HandleUrl() {
     console.log("Hello Connection is work !!");
-    this.http.getRequest("https://jsonplaceholder.typicode.com/todos");
+    this.http.getRequest("https://jsonplaceholder.typicode.com/todos/5");
   }
 
 }
