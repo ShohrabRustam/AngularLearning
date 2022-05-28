@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'AngularLearning';
   constructor(private notifyService: NotificationService, private http: HttpService) {
   }
-  
+
   showSuccess() {
     setTimeout(() => {
       this.showToasterSuccess();
@@ -41,6 +41,7 @@ export class AppComponent {
       .subscribe((response: any) => {
         this.jsonValue = response;
         this.showToasterSuccess();
+        console.log(this.jsonValue);
       // }).unsubscribe(); // advance topic cover later
       })
 
