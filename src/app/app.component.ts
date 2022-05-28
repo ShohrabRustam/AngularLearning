@@ -50,6 +50,7 @@ export class AppComponent {
     name: 'SalmaRustam',
     age: 23,
   }
+  showUser:boolean = false;
 
   handleEvent(event: any) {
     console.log(event);

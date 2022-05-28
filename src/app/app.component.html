@@ -15,9 +15,9 @@
       (click)="showToasterInfo()">Info </button>
     <button type="button" class="btn btn-primary col-sm-5 text-center" style="margin: 10px"
       (click)="showToasterWarning()">Warning </button>
-      <button type="button" class="btn btn-primary col-sm-5 text-center" style="margin: 10px"
-      (click)="HandleUrl()">Fake API</button>
-</div>
+    <button type="button" class="btn btn-primary col-sm-5 text-center" style="margin: 10px" (click)="HandleUrl()">Fake
+      API</button>
+  </div>
   <lib-ng-toast></lib-ng-toast>
 </div>
 <br>
@@ -30,12 +30,16 @@
 <hr>
 <br>
 <hr>
-Name: <input placeholder="userName" [(ngModel)]="userObject.name"><br><hr>
-Age : <input placeholder="userAge" [(ngModel)]="userObject.age"><br><hr>
-Id : <input placeholder="userId" [(ngModel)]="userObject.id"><br><hr>
+Name: <input placeholder="userName" [(ngModel)]="userObject.name"><br>
+<hr>
+Age : <input placeholder="userAge" [(ngModel)]="userObject.age"><br>
+<hr>
+Id : <input placeholder="userId" [(ngModel)]="userObject.id"><br>
+<hr>
 
-
-<div class="container">
-  <h1>User Component</h1>
-  <app-user [user]="userObject" (userEvent)="handleEvent($event)"></app-user>
-</div>
+<ng-container *ngIf="showUser">
+  <div class="container">
+    <h1>User Component</h1>
+    <app-user [user]="userObject" (userEvent)="handleEvent($event)"></app-user>
+  </div>
+</ng-container>
