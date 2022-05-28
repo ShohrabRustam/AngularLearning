@@ -11,13 +11,21 @@ import { FormsModule } from '@angular/forms';
 import { TruncatePipe } from './truncate.pipe';
 import {HttpClientModule} from '@angular/common/http';
 import { UserComponent } from './user/user.component';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
+import { ThirdComponent } from './third/third.component';
+import { ForthComponent } from './forth/forth.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
     TruncatePipe,
-    UserComponent
+    UserComponent,
+    FirstComponent,
+    SecondComponent,
+    ThirdComponent,
+    ForthComponent
   ],
   imports: [
     BrowserModule,
