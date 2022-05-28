@@ -17,9 +17,14 @@ export class UserComponent implements OnInit {
   @Input() user: UserInterface;
 
   @Output() userEvent: EventEmitter<UserInterface>;
+  
+  isStyle:boolean = false; 
+
   constructor() {
     this.userEvent = new EventEmitter<UserInterface>();
     this.user = {} as UserInterface;
+    this.isStyle=true; // disable patch
+
   }
   ngOnInit(): void {
   }
