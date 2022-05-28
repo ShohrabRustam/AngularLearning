@@ -47,4 +47,9 @@ export class AppComponent {
 
   }
 
+  userObject = {
+    id:1,
+    name: 'SalmaRustam',
+    age: 23,
+  }
 }

@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+interface UserInterface {
+  id: number;
+  name: string;
+  age: number;
+}
 
 @Component({
   selector: 'app-user',
@@ -8,13 +14,10 @@ import { Component, OnInit } from '@angular/core';
 
 export class UserComponent implements OnInit {
 
-  constructor() { }
-
-  user= {
-    'name': 'Rustam',
-    age: 22,
-    id:0,
-  }
+  @Input() user: UserInterface;
+  constructor() {
+    this.user = {} as UserInterface;
+   }
   ngOnInit(): void {
   }
 
