@@ -7,9 +7,9 @@ import { HttpService } from './http.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  jsonValue : any;
   title = 'AngularLearning';
   constructor(private notifyService: NotificationService, private http: HttpService) {
-
   }
 
   demo() {
@@ -20,6 +20,7 @@ export class AppComponent {
       this.showToasterSuccess();
     }, 2000);
   }
+
   showToasterSuccess() {
     this.notifyService.showSuccess("Data shown successfully !!", "www.SalmaRustam.com")
   }
@@ -29,7 +30,6 @@ export class AppComponent {
 
   }
 
-
   showToasterWarning() {
     for (let i = 0; i < 100; i++) {
       console.log(i);
@@ -37,13 +37,20 @@ export class AppComponent {
     this.notifyService.showWarning("Some is Warning", "www.SalmaRustam.com")
 
   }
+
   showToasterError() {
     this.notifyService.showError("Something is wrong", "www.SalmaRustam.com")
   }
 
   HandleUrl() {
     console.log("Hello Connection is work !!");
-    this.http.getRequest("https://jsonplaceholder.typicode.com/todos/5");
+    this.http.getRequest("https://jsonplaceholder.typicode.com/todos/5")
+      .subscribe((response: any) => {
+        this.jsonValue = response;
+        this.showToasterSuccess();
+      // }).unsubscribe(); // advance topic cover later
+      })
+
   }
 
 }
