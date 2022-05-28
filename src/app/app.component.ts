@@ -11,10 +11,7 @@ export class AppComponent {
   title = 'AngularLearning';
   constructor(private notifyService: NotificationService, private http: HttpService) {
   }
-
-  demo() {
-    alert("Connected to Angular");
-  }
+  
   showSuccess() {
     setTimeout(() => {
       this.showToasterSuccess();
@@ -27,13 +24,9 @@ export class AppComponent {
 
   showToasterInfo() {
     this.notifyService.showInfo("This is Info", "www.SalmaRustam.com")
-
   }
 
   showToasterWarning() {
-    for (let i = 0; i < 100; i++) {
-      console.log(i);
-    }
     this.notifyService.showWarning("Some is Warning", "www.SalmaRustam.com")
 
   }
