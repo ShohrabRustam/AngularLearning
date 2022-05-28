@@ -7,7 +7,7 @@ import { HttpService } from './http.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  jsonValue : any;
+  jsonValue: any;
   title = 'AngularLearning';
   constructor(private notifyService: NotificationService, private http: HttpService) {
   }
@@ -42,14 +42,16 @@ export class AppComponent {
         this.jsonValue = response;
         this.showToasterSuccess();
         console.log(this.jsonValue);
-      // }).unsubscribe(); // advance topic cover later
+        // }).unsubscribe(); // advance topic cover later
       })
-
   }
-
   userObject = {
-    id:1,
+    id: 1,
     name: 'SalmaRustam',
     age: 23,
+  }
+
+  handleEvent(event: any) {
+    console.log(event);
   }
 }

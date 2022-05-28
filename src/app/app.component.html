@@ -28,8 +28,14 @@
 </div>
 <br>
 <hr>
+<br>
+<hr>
+Name: <input placeholder="userName" [(ngModel)]="userObject.name"><br><hr>
+Age : <input placeholder="userAge" [(ngModel)]="userObject.age"><br><hr>
+Id : <input placeholder="userId" [(ngModel)]="userObject.id"><br><hr>
+
+
 <div class="container">
   <h1>User Component</h1>
-
-  <app-user [user]="userObject"></app-user>
+  <app-user [user]="userObject" (userEvent)="handleEvent($event)"></app-user>
 </div>
